@@ -1,0 +1,156 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1130" viewBox="0 0 1600 1130" font-family="'Noto Sans CJK SC','Noto Sans SC','Source Han Sans SC',sans-serif">
+<defs><marker id="ah" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="context-stroke"/></marker></defs>
+<rect x="0" y="0" width="1600" height="1130" rx="0" fill="#f8fafc" stroke="none" stroke-width="1.5"/>
+<text x="800.0" y="48" font-size="32" fill="#0f172a" font-weight="700" text-anchor="middle" dominant-baseline="middle">本体驱动的企业 AI 落地架构</text>
+<text x="800.0" y="86" font-size="17" fill="#64748b" font-weight="400" text-anchor="middle" dominant-baseline="middle">数据接入 → 可执行本体 → Agent 应用，由 FDE 方法论交付，在业务闭环中持续优化</text>
+<rect x="40" y="115" width="1110" height="160" rx="14" fill="#ffffff" stroke="#0f766e" stroke-width="2"/>
+<rect x="40" y="115" width="1110" height="42" rx="14" fill="#0f766e" stroke="none" stroke-width="1.5"/>
+<rect x="40" y="143" width="1110" height="14" rx="0" fill="#0f766e" stroke="none" stroke-width="1.5"/>
+<text x="60" y="136" font-size="20" fill="#ffffff" font-weight="700" text-anchor="start" dominant-baseline="middle">① 企业数据与系统接入层</text>
+<rect x="60.0" y="173" width="343.3333333333333" height="86" rx="10" fill="#e6f4f1" stroke="#0f766e" stroke-width="1.5"/>
+<text x="231.66666666666666" y="203.0" font-size="19" fill="#0f766e" font-weight="700" text-anchor="middle" dominant-baseline="middle">业务系统</text>
+<text x="231.66666666666666" y="232.0" font-size="15" fill="#475569" font-weight="400" text-anchor="middle" dominant-baseline="middle">ERP · MES · CRM · WMS · IoT</text>
+<rect x="423.3333333333333" y="173" width="343.3333333333333" height="86" rx="10" fill="#e6f4f1" stroke="#0f766e" stroke-width="1.5"/>
+<text x="595.0" y="203.0" font-size="19" fill="#0f766e" font-weight="700" text-anchor="middle" dominant-baseline="middle">企业资料</text>
+<text x="595.0" y="232.0" font-size="15" fill="#475569" font-weight="400" text-anchor="middle" dominant-baseline="middle">文档 · 表格 · 知识库</text>
+<rect x="786.6666666666666" y="173" width="343.3333333333333" height="86" rx="10" fill="#e6f4f1" stroke="#0f766e" stroke-width="1.5"/>
+<text x="958.3333333333333" y="203.0" font-size="19" fill="#0f766e" font-weight="700" text-anchor="middle" dominant-baseline="middle">接入方式</text>
+<text x="958.3333333333333" y="232.0" font-size="15" fill="#475569" font-weight="400" text-anchor="middle" dominant-baseline="middle">API · 数据库视图 · 文件同步 · MCP</text>
+<line x1="428.5" y1="282" x2="428.5" y2="320" stroke="#64748b" stroke-width="2.5" marker-end="url(#ah)"/>
+<text x="442.5" y="301" font-size="15" fill="#475569" font-weight="400" text-anchor="start" dominant-baseline="middle">数据同步 / 业务事件</text>
+<line x1="761.5" y1="320" x2="761.5" y2="282" stroke="#64748b" stroke-width="2.5" marker-end="url(#ah)"/>
+<text x="775.5" y="301" font-size="15" fill="#475569" font-weight="400" text-anchor="start" dominant-baseline="middle">受控写回原系统</text>
+<rect x="40" y="328" width="1110" height="380" rx="14" fill="#ffffff" stroke="#4338ca" stroke-width="2"/>
+<rect x="40" y="328" width="1110" height="42" rx="14" fill="#4338ca" stroke="none" stroke-width="1.5"/>
+<rect x="40" y="356" width="1110" height="14" rx="0" fill="#4338ca" stroke="none" stroke-width="1.5"/>
+<text x="60" y="349" font-size="20" fill="#ffffff" font-weight="700" text-anchor="start" dominant-baseline="middle">② 企业本体层</text>
+<text x="60" y="400" font-size="17" fill="#4338ca" font-weight="700" text-anchor="start" dominant-baseline="middle">核心要素</text>
+<rect x="60.0" y="420" width="195.0" height="52" rx="8" fill="#eef0ff" stroke="#c7cbf5" stroke-width="1.2"/>
+<text x="157.5" y="437" font-size="15" fill="#4338ca" font-weight="700" text-anchor="middle" dominant-baseline="middle">Object</text>
+<text x="157.5" y="457" font-size="14" fill="#475569" font-weight="400" text-anchor="middle" dominant-baseline="middle">业务对象</text>
+<rect x="265.0" y="420" width="195.0" height="52" rx="8" fill="#eef0ff" stroke="#c7cbf5" stroke-width="1.2"/>
+<text x="362.5" y="437" font-size="15" fill="#4338ca" font-weight="700" text-anchor="middle" dominant-baseline="middle">Relationship</text>
+<text x="362.5" y="457" font-size="14" fill="#475569" font-weight="400" text-anchor="middle" dominant-baseline="middle">关系</text>
+<rect x="60.0" y="482" width="195.0" height="52" rx="8" fill="#eef0ff" stroke="#c7cbf5" stroke-width="1.2"/>
+<text x="157.5" y="499" font-size="15" fill="#4338ca" font-weight="700" text-anchor="middle" dominant-baseline="middle">State</text>
+<text x="157.5" y="519" font-size="14" fill="#475569" font-weight="400" text-anchor="middle" dominant-baseline="middle">状态</text>
+<rect x="265.0" y="482" width="195.0" height="52" rx="8" fill="#eef0ff" stroke="#c7cbf5" stroke-width="1.2"/>
+<text x="362.5" y="499" font-size="15" fill="#4338ca" font-weight="700" text-anchor="middle" dominant-baseline="middle">Rule &amp; Computation</text>
+<text x="362.5" y="519" font-size="14" fill="#475569" font-weight="400" text-anchor="middle" dominant-baseline="middle">规则与计算</text>
+<rect x="60.0" y="544" width="195.0" height="52" rx="8" fill="#eef0ff" stroke="#c7cbf5" stroke-width="1.2"/>
+<text x="157.5" y="561" font-size="15" fill="#4338ca" font-weight="700" text-anchor="middle" dominant-baseline="middle">Action</text>
+<text x="157.5" y="581" font-size="14" fill="#475569" font-weight="400" text-anchor="middle" dominant-baseline="middle">受控动作</text>
+<rect x="265.0" y="544" width="195.0" height="52" rx="8" fill="#eef0ff" stroke="#c7cbf5" stroke-width="1.2"/>
+<text x="362.5" y="561" font-size="15" fill="#4338ca" font-weight="700" text-anchor="middle" dominant-baseline="middle">Permission</text>
+<text x="362.5" y="581" font-size="14" fill="#475569" font-weight="400" text-anchor="middle" dominant-baseline="middle">权限</text>
+<rect x="490" y="388" width="640" height="218" rx="12" fill="#f5f3ff" stroke="#4338ca" stroke-width="2" stroke-dasharray="7 5"/>
+<text x="810.0" y="412" font-size="19" fill="#4338ca" font-weight="700" text-anchor="middle" dominant-baseline="middle">可执行本体（Runnable World Model）</text>
+<rect x="510" y="436" width="600" height="46" rx="8" fill="#ffffff" stroke="#a5b4fc" stroke-width="1.2"/>
+<text x="530" y="459" font-size="17" fill="#312e81" font-weight="700" text-anchor="start" dominant-baseline="middle">业务语义层</text>
+<text x="660" y="459" font-size="15" fill="#475569" font-weight="400" text-anchor="start" dominant-baseline="middle">统一对象、关系与状态的含义</text>
+<rect x="510" y="490" width="600" height="46" rx="8" fill="#ffffff" stroke="#a5b4fc" stroke-width="1.2"/>
+<text x="530" y="513" font-size="17" fill="#312e81" font-weight="700" text-anchor="start" dominant-baseline="middle">语义执行层</text>
+<text x="660" y="513" font-size="15" fill="#475569" font-weight="400" text-anchor="start" dominant-baseline="middle">规则引擎 · 计算引擎 · Action Runtime</text>
+<rect x="510" y="544" width="600" height="46" rx="8" fill="#ffffff" stroke="#a5b4fc" stroke-width="1.2"/>
+<text x="530" y="567" font-size="17" fill="#312e81" font-weight="700" text-anchor="start" dominant-baseline="middle">事件驱动层</text>
+<text x="660" y="567" font-size="15" fill="#475569" font-weight="400" text-anchor="start" dominant-baseline="middle">感知变化 · 更新状态 · 触发影响分析</text>
+<line x1="464" y1="518" x2="486" y2="518" stroke="#4338ca" stroke-width="2" marker-end="url(#ah)"/>
+<text x="60" y="616" font-size="17" fill="#4338ca" font-weight="700" text-anchor="start" dominant-baseline="middle">平台能力底座</text>
+<rect x="60.0" y="632" width="257.0" height="50" rx="8" fill="#e0e7ff" stroke="none" stroke-width="1.5"/>
+<text x="188.5" y="657" font-size="16" fill="#3730a3" font-weight="600" text-anchor="middle" dominant-baseline="middle">数据管理与实时同步</text>
+<rect x="331.0" y="632" width="257.0" height="50" rx="8" fill="#e0e7ff" stroke="none" stroke-width="1.5"/>
+<text x="459.5" y="657" font-size="16" fill="#3730a3" font-weight="600" text-anchor="middle" dominant-baseline="middle">模型与 Agent 编排</text>
+<rect x="602.0" y="632" width="257.0" height="50" rx="8" fill="#e0e7ff" stroke="none" stroke-width="1.5"/>
+<text x="730.5" y="657" font-size="16" fill="#3730a3" font-weight="600" text-anchor="middle" dominant-baseline="middle">权限治理与审计</text>
+<rect x="873.0" y="632" width="257.0" height="50" rx="8" fill="#e0e7ff" stroke="none" stroke-width="1.5"/>
+<text x="1001.5" y="657" font-size="16" fill="#3730a3" font-weight="600" text-anchor="middle" dominant-baseline="middle">版本管理与回滚</text>
+<line x1="428.5" y1="714" x2="428.5" y2="752" stroke="#64748b" stroke-width="2.5" marker-end="url(#ah)"/>
+<text x="442.5" y="733" font-size="15" fill="#475569" font-weight="400" text-anchor="start" dominant-baseline="middle">业务上下文 / 可执行动作</text>
+<line x1="761.5" y1="752" x2="761.5" y2="714" stroke="#64748b" stroke-width="2.5" marker-end="url(#ah)"/>
+<text x="775.5" y="733" font-size="15" fill="#475569" font-weight="400" text-anchor="start" dominant-baseline="middle">调用 Action（业务意图）</text>
+<rect x="40" y="760" width="1110" height="140" rx="14" fill="#ffffff" stroke="#b45309" stroke-width="2"/>
+<rect x="40" y="760" width="1110" height="42" rx="14" fill="#b45309" stroke="none" stroke-width="1.5"/>
+<rect x="40" y="788" width="1110" height="14" rx="0" fill="#b45309" stroke="none" stroke-width="1.5"/>
+<text x="60" y="781" font-size="20" fill="#ffffff" font-weight="700" text-anchor="start" dominant-baseline="middle">③ Agent 与业务应用层</text>
+<rect x="60.0" y="816" width="245.0" height="70" rx="10" fill="#fff6e5" stroke="#b45309" stroke-width="1.5"/>
+<text x="182.5" y="838.0" font-size="19" fill="#b45309" font-weight="700" text-anchor="middle" dominant-baseline="middle">多 Agent 协同</text>
+<text x="182.5" y="867.0" font-size="15" fill="#475569" font-weight="400" text-anchor="middle" dominant-baseline="middle">分工推理与规划</text>
+<line x1="308.0" y1="851" x2="332.0" y2="851" stroke="#b45309" stroke-width="2" marker-end="url(#ah)"/>
+<rect x="335.0" y="816" width="245.0" height="70" rx="10" fill="#fff6e5" stroke="#b45309" stroke-width="1.5"/>
+<text x="457.5" y="838.0" font-size="19" fill="#b45309" font-weight="700" text-anchor="middle" dominant-baseline="middle">业务应用场景</text>
+<text x="457.5" y="867.0" font-size="15" fill="#475569" font-weight="400" text-anchor="middle" dominant-baseline="middle">生产 · 供应链 · 客服…</text>
+<line x1="583.0" y1="851" x2="607.0" y2="851" stroke="#b45309" stroke-width="2" marker-end="url(#ah)"/>
+<rect x="610.0" y="816" width="245.0" height="70" rx="10" fill="#fff6e5" stroke="#b45309" stroke-width="1.5"/>
+<text x="732.5" y="838.0" font-size="19" fill="#b45309" font-weight="700" text-anchor="middle" dominant-baseline="middle">业务执行</text>
+<text x="732.5" y="867.0" font-size="15" fill="#475569" font-weight="400" text-anchor="middle" dominant-baseline="middle">调用 Action，不直连 API</text>
+<line x1="858.0" y1="851" x2="882.0" y2="851" stroke="#b45309" stroke-width="2" marker-end="url(#ah)"/>
+<rect x="885.0" y="816" width="245.0" height="70" rx="10" fill="#fff6e5" stroke="#b45309" stroke-width="1.5"/>
+<text x="1007.5" y="838.0" font-size="19" fill="#b45309" font-weight="700" text-anchor="middle" dominant-baseline="middle">结果反馈</text>
+<text x="1007.5" y="867.0" font-size="15" fill="#475569" font-weight="400" text-anchor="middle" dominant-baseline="middle">回写状态，进入复盘</text>
+<rect x="1180" y="115" width="380" height="785" rx="14" fill="#ffffff" stroke="#047857" stroke-width="2"/>
+<rect x="1180" y="115" width="380" height="42" rx="14" fill="#047857" stroke="none" stroke-width="1.5"/>
+<rect x="1180" y="143" width="380" height="14" rx="0" fill="#047857" stroke="none" stroke-width="1.5"/>
+<text x="1200" y="136" font-size="20" fill="#ffffff" font-weight="700" text-anchor="start" dominant-baseline="middle">④ FDE 交付方法论</text>
+<rect x="1210" y="180" width="270" height="92" rx="10" fill="#ecfdf5" stroke="#047857" stroke-width="1.5"/>
+<circle cx="1240" cy="226" r="17" fill="#047857"/>
+<text x="1240" y="227" font-size="18" fill="#fff" font-weight="700" text-anchor="middle" dominant-baseline="middle">1</text>
+<text x="1270" y="212" font-size="19" fill="#065f46" font-weight="700" text-anchor="start" dominant-baseline="middle">驻场诊断</text>
+<text x="1270" y="242" font-size="15" fill="#475569" font-weight="400" text-anchor="start" dominant-baseline="middle">找到一个高价值业务闭环</text>
+<line x1="1345.0" y1="274" x2="1345.0" y2="314" stroke="#047857" stroke-width="2" marker-end="url(#ah)"/>
+<rect x="1210" y="318" width="270" height="92" rx="10" fill="#ecfdf5" stroke="#047857" stroke-width="1.5"/>
+<circle cx="1240" cy="364" r="17" fill="#047857"/>
+<text x="1240" y="365" font-size="18" fill="#fff" font-weight="700" text-anchor="middle" dominant-baseline="middle">2</text>
+<text x="1270" y="350" font-size="19" fill="#065f46" font-weight="700" text-anchor="start" dominant-baseline="middle">本体建模</text>
+<text x="1270" y="380" font-size="15" fill="#475569" font-weight="400" text-anchor="start" dominant-baseline="middle">最小可运行的对象与动作</text>
+<line x1="1345.0" y1="412" x2="1345.0" y2="452" stroke="#047857" stroke-width="2" marker-end="url(#ah)"/>
+<rect x="1210" y="456" width="270" height="92" rx="10" fill="#ecfdf5" stroke="#047857" stroke-width="1.5"/>
+<circle cx="1240" cy="502" r="17" fill="#047857"/>
+<text x="1240" y="503" font-size="18" fill="#fff" font-weight="700" text-anchor="middle" dominant-baseline="middle">3</text>
+<text x="1270" y="488" font-size="19" fill="#065f46" font-weight="700" text-anchor="start" dominant-baseline="middle">应用组装</text>
+<text x="1270" y="518" font-size="15" fill="#475569" font-weight="400" text-anchor="start" dominant-baseline="middle">Agent + 规则 + 审批流</text>
+<line x1="1345.0" y1="550" x2="1345.0" y2="590" stroke="#047857" stroke-width="2" marker-end="url(#ah)"/>
+<rect x="1210" y="594" width="270" height="92" rx="10" fill="#ecfdf5" stroke="#047857" stroke-width="1.5"/>
+<circle cx="1240" cy="640" r="17" fill="#047857"/>
+<text x="1240" y="641" font-size="18" fill="#fff" font-weight="700" text-anchor="middle" dominant-baseline="middle">4</text>
+<text x="1270" y="626" font-size="19" fill="#065f46" font-weight="700" text-anchor="start" dominant-baseline="middle">影子运行与验证</text>
+<text x="1270" y="656" font-size="15" fill="#475569" font-weight="400" text-anchor="start" dominant-baseline="middle">与人工结果并行比对</text>
+<line x1="1345.0" y1="688" x2="1345.0" y2="728" stroke="#047857" stroke-width="2" marker-end="url(#ah)"/>
+<rect x="1210" y="732" width="270" height="92" rx="10" fill="#ecfdf5" stroke="#047857" stroke-width="1.5"/>
+<circle cx="1240" cy="778" r="17" fill="#047857"/>
+<text x="1240" y="779" font-size="18" fill="#fff" font-weight="700" text-anchor="middle" dominant-baseline="middle">5</text>
+<text x="1270" y="764" font-size="19" fill="#065f46" font-weight="700" text-anchor="start" dominant-baseline="middle">生产交付与沉淀</text>
+<text x="1270" y="794" font-size="15" fill="#475569" font-weight="400" text-anchor="start" dominant-baseline="middle">上线，沉淀为可复用资产</text>
+<path d="M 1480 778 H 1522 V 226 H 1484" fill="none" stroke="#047857" stroke-width="2.5" stroke-dasharray="8 6" marker-end="url(#ah)"/>
+<rect x="1510" y="430" width="26" height="140" rx="4" fill="#ffffff" stroke="none" stroke-width="1.5"/>
+<text x="1523" y="500" font-size="17" fill="#047857" font-weight="700" text-anchor="middle" writing-mode="vertical-rl" letter-spacing="4">持续优化</text>
+<rect x="40" y="930" width="1520" height="150" rx="14" fill="#ffffff" stroke="#be123c" stroke-width="2"/>
+<text x="60" y="958" font-size="20" fill="#be123c" font-weight="700" text-anchor="start" dominant-baseline="middle">⑤ 业务闭环示例：生产异常处置</text>
+<rect x="60.0" y="986" width="155.25" height="50" rx="10" fill="#ffe4e6" stroke="#fda4af" stroke-width="1.5"/>
+<text x="137.625" y="1011" font-size="17" fill="#9f1239" font-weight="700" text-anchor="middle" dominant-baseline="middle">设备故障</text>
+<line x1="218.25" y1="1011" x2="246.25" y2="1011" stroke="#be123c" stroke-width="2" marker-end="url(#ah)"/>
+<rect x="249.25" y="986" width="155.25" height="50" rx="10" fill="#ffe4e6" stroke="#fda4af" stroke-width="1.5"/>
+<text x="326.875" y="1011" font-size="17" fill="#9f1239" font-weight="700" text-anchor="middle" dominant-baseline="middle">对象映射</text>
+<line x1="407.5" y1="1011" x2="435.5" y2="1011" stroke="#be123c" stroke-width="2" marker-end="url(#ah)"/>
+<rect x="438.5" y="986" width="155.25" height="50" rx="10" fill="#ffe4e6" stroke="#fda4af" stroke-width="1.5"/>
+<text x="516.125" y="1011" font-size="17" fill="#9f1239" font-weight="700" text-anchor="middle" dominant-baseline="middle">影响分析</text>
+<line x1="596.75" y1="1011" x2="624.75" y2="1011" stroke="#be123c" stroke-width="2" marker-end="url(#ah)"/>
+<rect x="627.75" y="986" width="155.25" height="50" rx="10" fill="#ffe4e6" stroke="#fda4af" stroke-width="1.5"/>
+<text x="705.375" y="1011" font-size="17" fill="#9f1239" font-weight="700" text-anchor="middle" dominant-baseline="middle">方案生成</text>
+<line x1="786.0" y1="1011" x2="814.0" y2="1011" stroke="#be123c" stroke-width="2" marker-end="url(#ah)"/>
+<rect x="817.0" y="986" width="155.25" height="50" rx="10" fill="#fecdd3" stroke="#be123c" stroke-width="1.5"/>
+<text x="894.625" y="1011" font-size="17" fill="#9f1239" font-weight="700" text-anchor="middle" dominant-baseline="middle">审批确认</text>
+<line x1="975.25" y1="1011" x2="1003.25" y2="1011" stroke="#be123c" stroke-width="2" marker-end="url(#ah)"/>
+<rect x="1006.25" y="986" width="155.25" height="50" rx="10" fill="#ffe4e6" stroke="#fda4af" stroke-width="1.5"/>
+<text x="1083.875" y="1011" font-size="17" fill="#9f1239" font-weight="700" text-anchor="middle" dominant-baseline="middle">执行操作</text>
+<line x1="1164.5" y1="1011" x2="1192.5" y2="1011" stroke="#be123c" stroke-width="2" marker-end="url(#ah)"/>
+<rect x="1195.5" y="986" width="155.25" height="50" rx="10" fill="#ffe4e6" stroke="#fda4af" stroke-width="1.5"/>
+<text x="1273.125" y="1011" font-size="17" fill="#9f1239" font-weight="700" text-anchor="middle" dominant-baseline="middle">结果校验</text>
+<line x1="1353.75" y1="1011" x2="1381.75" y2="1011" stroke="#be123c" stroke-width="2" marker-end="url(#ah)"/>
+<rect x="1384.75" y="986" width="155.25" height="50" rx="10" fill="#ffe4e6" stroke="#fda4af" stroke-width="1.5"/>
+<text x="1462.375" y="1011" font-size="17" fill="#9f1239" font-weight="700" text-anchor="middle" dominant-baseline="middle">沉淀优化</text>
+<path d="M 1462.375 1038 V 1060 H 137.625 V 1042" fill="none" stroke="#be123c" stroke-width="2" stroke-dasharray="6 5" marker-end="url(#ah)"/>
+<rect x="650.0" y="1049" width="300" height="24" rx="4" fill="#ffffff" stroke="none" stroke-width="1.5"/>
+
+<text x="800.0" y="1061" font-size="14" fill="#be123c" font-weight="400" text-anchor="middle" dominant-baseline="middle">经验回流本体与规则，下一次处置更快</text>
+<text x="1560" y="1102" font-size="14" fill="#94a3b8" font-weight="400" text-anchor="end" dominant-baseline="middle">HansenUp 根据公开资料理解后重新绘制 · hansenup</text>
+</svg>
