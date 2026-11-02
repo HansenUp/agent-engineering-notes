@@ -8,6 +8,7 @@ hansenup 的 Agent 工程笔记，从企业技术负责人的视角，记录 AI 
 
 | 日期 | 文章 | 简介 |
 |---|---|---|
+| 2026-11 | [模型之外的那一层：Agent Harness 的概念、演进与工程实践](articles/2026-11-agent-harness.md) | 按「概念 → 演进 → 应用」梳理 Agent Harness：厘清它与 Prompt、Agent 框架、Runtime、Scaffold 的边界，回顾 Prompt → Context → Harness Engineering 的演进，拆解 Claude Code / Claude Agent SDK、DeepSeek Harness 和 DeepSeek Super-agent 三个案例。信息截至 2026-11-02。 |
 | 2026-10 | [从「存在之学」到「可执行本体」：Ontology 的概念、演进与企业 AI 落地](articles/2026-10-ontology-enterprise-ai.md) | 按「概念 → 演进 → 企业应用」梳理 Ontology 从哲学、知识工程、语义网、知识图谱到可执行本体的脉络；企业应用部分讨论业务语义执行层、Action 与权限治理、FDE 交付方法和是否引入 Ontology 的判断。 |
 | 2026-10 | [四家官方 Agent SDK 怎么选：Google ADK、Claude Agent SDK、OpenAI Agents SDK、DeepSeek Harness](articles/2026-10-official-agent-sdk-comparison.md) | 用"谁控制循环、谁保存状态、谁能拦截、谁负责恢复"四个问题，加一个"绑定"问题，对比四家官方 Agent SDK；附场景决策指南和企业落地注意事项。信息截至 2026-10-29。 |
 | 2026-09 | [Agent Framework（智能体框架）详细调研对比报告](articles/2026-09-agent-framework-research.md) | 对比 LangChain、LangGraph、AgentScope 2.x、Spring AI Alibaba、Claude Agent SDK、DeepSeek Harness 的架构层次、能力矩阵、许可与运维、PoC 评分方法和企业组合建议。核验于 2026-09-15/16，2026-10-28 复核版本。[交互版](https://hansenup.github.io/enterprise-agent-guide/research.html) |
