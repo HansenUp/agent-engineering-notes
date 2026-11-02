@@ -2,6 +2,8 @@
 
 > 作者：HansenUp ｜ 2026 年 11 月 2 日
 >
+> 精炼图解版见：[一张图看懂 Agent Harness：2020—2026 的演进（精炼版）](2026-11-agent-harness-brief.md)
+>
 > **摘要**：「Harness」原义是马具和盔甲，后来在软件工程里指测试夹具（test harness），又在大模型评测中指评测框架（evaluation harness）。2025 年底到 2026 年上半年，Anthropic、OpenAI、LangChain 几乎同时把这个词用在一个新对象上：**包在模型外面、让模型能作为 Agent 干活的那一层系统**，并由此带出了「Harness Engineering」这一说法。本文先厘清 harness 与 Prompt、Agent 框架、Runtime、Scaffold 的边界，再按时间线梳理「Prompt → Context → Harness」的演进，然后拆解三个案例：Anthropic 的 Claude Code / Claude Agent SDK，DeepSeek 开源的 DeepSeek Harness（dsh），以及 DeepSeek Harness 团队 2026 年 10 月 31 日发布的 Super-agent 架构文章和原型。最后给出展望。
 >
 > **来源说明**：全文只使用公开网络资料，每个事实都附脚注链接。所有网页、版本号和 GitHub Star 数均在 2026-11-02（UTC+8）查询；Star 数用 GitHub API 实时读取，版本号用 npm / PyPI 实时读取。X（Twitter）上的原帖无法直接抓取，相关内容通过第三方镜像页阅读，正文会逐处注明。直接引文保留英文原文并给出链接，译文是笔者自译。标注「笔者观点」的段落是笔者个人分析，不代表任何厂商立场。文中所有图表均由笔者自行绘制。
