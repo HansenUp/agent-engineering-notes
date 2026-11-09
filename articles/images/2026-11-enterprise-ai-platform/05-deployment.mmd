@@ -1,0 +1,23 @@
+flowchart TB
+    U["企业入口"] --> I["现有 TLS 入口与 SSO"]
+    subgraph APP["参考实现：Python 单栈，同一代码库、依赖锁与应用镜像"]
+        A["FastAPI API 进程\n接收任务・身份校验・批准・查询"]
+        W["后台 worker 进程\n任务控制・LangGraph 运行\n确定性执行・对账"]
+        N["模块划分不等于安全隔离\n需要隔离凭证时另分进程与账号"]
+    end
+    I --> A
+    P[("PostgreSQL\n任务・批准・操作・派发\n独立 checkpoint schema")]
+    A -->|"先持久化任务与批准"| P
+    P -->|"领取与恢复；重查批准"| W
+    W -->|"状态、checkpoint 与核实结果"| P
+    W --> T["既有设备与工单 API\n最终授权・真正去重・权威回执"]
+    W --> V["现有授权检索\n或按需 pgvector"]
+    W --> F["现有 S3 兼容存储\n受控文档与附件"]
+    W --> G["受控模型出口\n直接 Python SDK；按需网关"]
+    G --> M["已批准模型端点\n内网推理或合规外部服务"]
+    A -. "OTel" .-> O["现有监控与受限审计存储"]
+    W -. "OTel" .-> O
+    classDef app fill:#edf2ff,stroke:#4764aa,color:#1d315b
+    classDef warning fill:#fff3df,stroke:#b17b2d,color:#62441c
+    class A,W app
+    class N warning

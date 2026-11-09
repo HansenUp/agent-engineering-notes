@@ -1,0 +1,24 @@
+flowchart TB
+    U["员工与审批人"] --> B["业务控制模块\n身份・授权・任务状态・审批"]
+    subgraph CONTROL["职责边界非微服务清单：配置不替代运行时检查"]
+        V["版本清单与评测"]
+        P["策略与预算"]
+        O["观测与审计"]
+    end
+    V -.-> B
+    P -.-> B
+    B --> A["单 Agent\n理解问题・检索・形成建议"]
+    A --> R["只读工具入口\n模块或领域 API；逐次授权"]
+    R --> K["知识文档与设备查询\n保留来源与对象版本"]
+    A -->|"候选动作，不是授权"| B
+    B --> E["确定性执行器\n复核批准・稳定操作号"]
+    E --> T["工单领域服务\n真正去重・业务提交・权威回执"]
+    T -->|"结果核实"| B
+    B --> S[("任务与审批记录")]
+    A --> C[("图状态检查点")]
+    B -.-> O
+    E -.-> O
+    classDef trusted fill:#e9f4f1,stroke:#16756a,color:#123e38
+    classDef agent fill:#edf2ff,stroke:#4764aa,color:#1d315b
+    class B,R,E,T trusted
+    class A agent

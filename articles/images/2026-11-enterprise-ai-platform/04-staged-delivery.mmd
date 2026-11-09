@@ -1,0 +1,16 @@
+flowchart TB
+    A["阶段 0：定义任务与权限\n产物：场景契约、合成数据、评测任务"]
+    B["阶段 1：只读建议\n证据：允许与拒绝、撤权、注入测试"]
+    C["阶段 2：受控写入\n证据：动作绑定审批、去重、回执丢失恢复"]
+    D["阶段 3：有限上线\n证据：版本回归、预算、值班、恢复与回退"]
+    E["阶段 4：检验复用\n证据：第二场景接入、组件替换与状态导出"]
+    X["未过门槛：修正或停留当前阶段\n不因架构图完整而继续扩建"]
+    A --> B --> C --> D --> E
+    B -. "不通过" .-> X
+    C -. "不通过" .-> X
+    D -. "不通过" .-> X
+    E --> F["有测量依据后再选\n网关、搜索集群、长流程引擎、多 Agent"]
+    classDef stage fill:#edf2ff,stroke:#4764aa,color:#1d315b
+    classDef guard fill:#fff3df,stroke:#b17b2d,color:#62441c
+    class A,B,C,D,E,F stage
+    class X guard

@@ -1,0 +1,31 @@
+sequenceDiagram
+    autonumber
+    actor U as 用户
+    participant B as 任务与审批服务
+    participant A as Agent
+    participant D as 平台状态库
+    participant T as 工单领域服务
+    U->>B: 登录后提交服务请求
+    B->>A: 限定身份范围、工具集和预算
+    A-->>B: 工单草稿与证据
+    B->>D: 保存不可变动作、参数摘要、operation_id
+    B-->>U: 展示确切动作与参数
+    U->>B: 确认当前版本
+    B->>D: 保存批准人、绑定摘要和有效期
+    B->>B: 复核身份与权限<br/>核对批准和对象状态
+    alt 参数变化、撤权或批准过期
+        B-->>U: 拒绝执行，必要时重新审批
+    else 所有检查通过
+        B->>D: 竞争领取动作，持久化提交意图
+        B->>T: 相同 operation_id 与已批准参数
+        T->>T: 校验命令与权限<br/>原子去重并提交
+        alt 正常收到回执
+            T-->>B: 工单号与权威状态
+        else 提交后回执丢失
+            B->>D: 标记结果待核实，禁止盲目重建
+            B->>T: 按 operation_id 查询
+            T-->>B: 权威结果，或仍未知
+        end
+        B->>D: 保存核实结果；未知则转人工
+        B-->>U: 返回工单号或明确待核实
+    end
