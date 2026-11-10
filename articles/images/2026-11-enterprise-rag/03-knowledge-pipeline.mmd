@@ -1,0 +1,21 @@
+flowchart TB
+    subgraph SRC["知识源盘点：每个源都有负责人"]
+        S1["IT 运维 Wiki"]
+        S2["HR 制度 PDF"]
+        S3["采购合同库"]
+        S4["工单历史\n含个人信息"]
+    end
+    SRC --> CON["连接器\n增量同步・删除事件・ACL 同步"]
+    CON --> PAR["解析\n版面・表格・图片说明・OCR"]
+    PAR --> GOV["治理检查\n分级・个人信息脱敏・来源可信度"]
+    GOV --> CH["切分\n按结构切・保留标题路径・可加片段上下文"]
+    CH --> MD["元数据\ndoc_id・版本・生效期・负责人・ACL 引用"]
+    MD --> IDX[("索引\n全文 + 向量 + 元数据")]
+    CON -.->|"文档删除或撤权"| INV["失效处理\n删索引・清缓存・标记旧会话"]
+    INV -.-> IDX
+    IDX --> QA["质量运营\n评测集・反馈・过期提醒"]
+    QA -.->|"问题回到源头修复"| SRC
+    classDef trusted fill:#e9f4f1,stroke:#16756a,color:#123e38
+    classDef warn fill:#fff4e5,stroke:#b26a00,color:#5a3500
+    class CON,GOV,MD trusted
+    class INV warn

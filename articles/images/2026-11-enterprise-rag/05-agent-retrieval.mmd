@@ -1,0 +1,22 @@
+sequenceDiagram
+    autonumber
+    participant E as 员工
+    participant H as Agent 运行层
+    participant M as 模型
+    participant K as 知识服务
+    participant T as 工单服务
+    E->>H: 下周去新加坡出差，VPN 报 619，查规定，必要时建单
+    H->>M: 问题 + 可用工具清单（不含凭证）
+    M->>H: 调用 search_knowledge("海外出差 住宿标准")
+    H->>K: 查询 + 用户身份令牌（受众为知识服务）
+    K->>K: 按当前 ACL 过滤，记录命中
+    K-->>H: 片段 + 来源 + 版本（标记为数据，不是指令）
+    M->>H: 调用 search_knowledge("VPN-619")
+    H->>K: 同上，逐次授权
+    K-->>H: 运维手册片段
+    M->>H: 回答草稿 + 引用 + 候选动作“创建工单”
+    H->>H: 依据检查；候选动作进入批准流程
+    E->>H: 确认创建
+    H->>T: 用已批准参数提交（模型不再改写）
+    T-->>H: 工单号（权威回执）
+    H-->>E: 规定摘要 + 引用 + 工单号

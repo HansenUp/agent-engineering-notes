@@ -1,0 +1,21 @@
+flowchart TB
+    Q["员工提问\n“海外出差住宿每晚能报多少？”"] --> ID["可信身份与上下文\n用户・部门・地区"]
+    ID --> R["检索服务\n先按当前权限过滤，再找相关片段"]
+    KB[("非参数知识\n制度・手册・合同\n可更新、可删除、可引用")] --> R
+    R --> C["上下文组装\n片段 + 来源 + 版本 + 生效日期"]
+    C --> G["模型生成\n参数知识负责理解与表达"]
+    G --> V["依据检查\n每个结论能否对应到引用片段"]
+    V -->|"有依据"| A["回答 + 引用"]
+    V -->|"无依据或冲突"| N["说明不知道\n或转知识负责人"]
+    subgraph NOT["RAG 不负责的事"]
+        X1["替代业务系统查实时状态"]
+        X2["授权写入或执行动作"]
+        X3["修复过期或错误的源文档"]
+    end
+    classDef trusted fill:#e9f4f1,stroke:#16756a,color:#123e38
+    classDef model fill:#edf2ff,stroke:#4764aa,color:#1d315b
+    classDef warn fill:#fff4e5,stroke:#b26a00,color:#5a3500
+    class ID,R,V trusted
+    class G model
+    class X1,X2,X3 warn
+    A ~~~ X1

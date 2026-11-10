@@ -1,0 +1,25 @@
+flowchart TB
+    U["应用或 Agent"] -->|"问题 + 可信身份"| QP["查询处理\n改写・分解・路由"]
+    QP --> AUTH["权限解析\n用户 → 组 → 可见范围"]
+    AUTH --> LEX["全文检索\nBM25"]
+    AUTH --> VEC["向量检索\n带权限过滤"]
+    LEX --> FU["融合\nRRF 或分数归一化"]
+    VEC --> FU
+    FU --> RR["重排\n交叉编码器或模型"]
+    RR --> RC["返回前复核\n按权威 ACL 再校验"]
+    RC --> CTX["上下文组装\n去重・排序・预算・来源标注"]
+    CTX --> GEN["生成\n要求逐条引用"]
+    GEN --> GC["依据检查\n引用是否支持结论"]
+    GC --> OUT["回答・引用・无答案说明"]
+    IDX[("索引与元数据")] --> LEX
+    IDX --> VEC
+    subgraph OBS["评测与观测"]
+        EV["离线评测集\n检索与生成分开打分"]
+        TR["运行记录\n查询・命中・引用・反馈"]
+    end
+    GC -.-> TR
+    TR -.-> EV
+    classDef trusted fill:#e9f4f1,stroke:#16756a,color:#123e38
+    classDef model fill:#edf2ff,stroke:#4764aa,color:#1d315b
+    class AUTH,RC,GC trusted
+    class QP,GEN model
