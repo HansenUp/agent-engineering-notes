@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1480" height="900" viewBox="0 0 1480 900">
+  <rect width="1480" height="900" fill="#FAFBFC"/>
+  <defs>
+  <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+    <path d="M 0 0 L 10 5 L 0 10 z" fill="#3D4F63"/>
+  </marker>
+  <marker id="arrow-dashed" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+    <path d="M 0 0 L 10 5 L 0 10 z" fill="#7A8792"/>
+  </marker>
+  <marker id="arrow-red" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+    <path d="M 0 0 L 10 5 L 0 10 z" fill="#8B3A3A"/>
+  </marker>
+  <marker id="arrow-green" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+    <path d="M 0 0 L 10 5 L 0 10 z" fill="#2F6B4F"/>
+  </marker>
+</defs>
+  <text x="40" y="36" font-family="Noto Sans CJK SC" font-size="20" fill="#1A2332" text-anchor="start" font-weight="bold">图 2  Ontology 核心概念：对象、链接、动作与分层权限</text>
+<text x="40" y="58" font-family="Noto Sans CJK SC" font-size="12" fill="#5A6570" text-anchor="start" font-weight="normal">以下设备运维模型是说明性例子，用于解释公开概念，不是已验证的客户本体。</text>
+<text x="40" y="90" font-family="Noto Sans CJK SC" font-size="12" fill="#5A6570" text-anchor="start" font-weight="normal">左侧是对象与链接，右上是可执行动作，右下是权限分层。提交条件只决定某次 Action 能否提交，不是整个平台的访问控制。</text>
+<rect x="40" y="120" width="820" height="620" rx="12" ry="12" fill="#FFFFFF" stroke="#C5CED6" stroke-width="1"/>
+<text x="56" y="148" font-family="Noto Sans CJK SC" font-size="14" fill="#2F4F7A" text-anchor="start" font-weight="bold">对象与链接（虚构实例）</text>
+<rect x="300" y="340" width="240" height="110" rx="10" ry="10" fill="#E7EEF8" stroke="#2F4F7A" stroke-width="1.5"/>
+<text x="420.0" y="362" font-family="Noto Sans CJK SC" font-size="14" fill="#2F4F7A" text-anchor="middle" font-weight="bold">设备  EQ-001</text>
+<text x="420.0" y="384" font-family="Noto Sans CJK SC" font-size="12" fill="#1A2332" text-anchor="middle" font-weight="normal">主键 eq-8f3a（无业务含义）</text>
+<text x="420.0" y="402" font-family="Noto Sans CJK SC" font-size="12" fill="#1A2332" text-anchor="middle" font-weight="normal">标题键：1 号空压机</text>
+<text x="420.0" y="420" font-family="Noto Sans CJK SC" font-size="12" fill="#1A2332" text-anchor="middle" font-weight="normal">状态：温度告警</text>
+<rect x="90" y="200" width="180" height="86" rx="10" ry="10" fill="#EEF2F6" stroke="#4A5A6A" stroke-width="1.5"/>
+<text x="180.0" y="222" font-family="Noto Sans CJK SC" font-size="14" fill="#4A5A6A" text-anchor="middle" font-weight="bold">产线  L-03</text>
+<text x="180.0" y="244" font-family="Noto Sans CJK SC" font-size="12" fill="#1A2332" text-anchor="middle" font-weight="normal">高压车间 A 线</text>
+<rect x="90" y="520" width="180" height="90" rx="10" ry="10" fill="#EEF2F6" stroke="#4A5A6A" stroke-width="1.5"/>
+<text x="180.0" y="542" font-family="Noto Sans CJK SC" font-size="14" fill="#4A5A6A" text-anchor="middle" font-weight="bold">部件  轴承</text>
+<text x="180.0" y="564" font-family="Noto Sans CJK SC" font-size="12" fill="#1A2332" text-anchor="middle" font-weight="normal">库存：有替换件</text>
+<rect x="590" y="200" width="220" height="100" rx="10" ry="10" fill="#F8EDE6" stroke="#8A4B2E" stroke-width="1.5"/>
+<text x="700.0" y="222" font-family="Noto Sans CJK SC" font-size="14" fill="#8A4B2E" text-anchor="middle" font-weight="bold">工单  （拟创建）</text>
+<text x="700.0" y="244" font-family="Noto Sans CJK SC" font-size="12" fill="#1A2332" text-anchor="middle" font-weight="normal">动作将建立此对象</text>
+<text x="700.0" y="262" font-family="Noto Sans CJK SC" font-size="12" fill="#1A2332" text-anchor="middle" font-weight="normal">并链接设备与技师</text>
+<rect x="590" y="520" width="220" height="100" rx="10" ry="10" fill="#E8F2EA" stroke="#2F6B4F" stroke-width="1.5"/>
+<text x="700.0" y="542" font-family="Noto Sans CJK SC" font-size="14" fill="#2F6B4F" text-anchor="middle" font-weight="bold">技师  T-17</text>
+<text x="700.0" y="564" font-family="Noto Sans CJK SC" font-size="12" fill="#1A2332" text-anchor="middle" font-weight="normal">资质：空压机维修</text>
+<text x="700.0" y="582" font-family="Noto Sans CJK SC" font-size="12" fill="#1A2332" text-anchor="middle" font-weight="normal">班次：在岗</text>
+<rect x="330" y="620" width="200" height="80" rx="10" ry="10" fill="#F3E9F0" stroke="#6B3D5E" stroke-width="1.5"/>
+<text x="430.0" y="642" font-family="Noto Sans CJK SC" font-size="14" fill="#6B3D5E" text-anchor="middle" font-weight="bold">规程  SOP-12</text>
+<text x="430.0" y="664" font-family="Noto Sans CJK SC" font-size="12" fill="#1A2332" text-anchor="middle" font-weight="normal">超温处置步骤</text>
+<rect x="318" y="318" width="204" height="22" rx="4" ry="4" fill="#2F4F7A" stroke="#2F4F7A" stroke-width="0"/>
+<text x="420" y="334" font-family="Noto Sans CJK SC" font-size="11" fill="#FFFFFF" text-anchor="middle" font-weight="normal">接口：可维护资产</text>
+<line x1="270" y1="243" x2="300" y2="370" stroke="#3D4F63" stroke-width="1.3" marker-end="url(#arrow)"/>
+<text x="248" y="300" font-family="Noto Sans CJK SC" font-size="11" fill="#374151" text-anchor="middle" font-weight="normal">属于</text>
+<line x1="270" y1="565" x2="300" y2="430" stroke="#3D4F63" stroke-width="1.3" marker-end="url(#arrow)"/>
+<text x="248" y="510" font-family="Noto Sans CJK SC" font-size="11" fill="#374151" text-anchor="middle" font-weight="normal">包含</text>
+<line x1="480" y1="360" x2="590" y2="260" stroke="#8A4B2E" stroke-width="1.3" marker-end="url(#arrow)" stroke-dasharray="5 3"/>
+<text x="560" y="300" font-family="Noto Sans CJK SC" font-size="11" fill="#8A4B2E" text-anchor="middle" font-weight="normal">工单针对</text>
+<line x1="700" y1="520" x2="700" y2="300" stroke="#2F6B4F" stroke-width="1.3" marker-end="url(#arrow)" stroke-dasharray="5 3"/>
+<text x="755" y="410" font-family="Noto Sans CJK SC" font-size="11" fill="#2F6B4F" text-anchor="start" font-weight="normal">派给</text>
+<line x1="430" y1="620" x2="420" y2="450" stroke="#6B3D5E" stroke-width="1.3" marker-end="url(#arrow)"/>
+<text x="500" y="545" font-family="Noto Sans CJK SC" font-size="11" fill="#6B3D5E" text-anchor="start" font-weight="normal">适用规程</text>
+<text x="56" y="715" font-family="Noto Sans CJK SC" font-size="12" fill="#5A6570" text-anchor="start" font-weight="normal">虚线链接表示将由 Action 创建，尚不是已存在的事实。主键使用无含义标识，资产编号只作为属性或标题。</text>
+<rect x="890" y="120" width="550" height="300" rx="12" ry="12" fill="#FFF8F3" stroke="#8A4B2E" stroke-width="1.5"/>
+<text x="910" y="150" font-family="Noto Sans CJK SC" font-size="16" fill="#8A4B2E" text-anchor="start" font-weight="bold">Action：创建并派工</text>
+<text x="910" y="180" font-family="Noto Sans CJK SC" font-size="13" fill="#1A2332" text-anchor="start" font-weight="normal">这是一次事务，不是一段模型自由文本。</text>
+<text x="910" y="200" font-family="Noto Sans CJK SC" font-size="13" fill="#1A2332" text-anchor="start" font-weight="normal">预定义逻辑：创建工单，链接设备与技师，</text>
+<text x="910" y="220" font-family="Noto Sans CJK SC" font-size="13" fill="#1A2332" text-anchor="start" font-weight="normal">更新设备处理状态，写入行动日志。</text>
+<text x="910" y="240" font-family="Noto Sans CJK SC" font-size="13" fill="#1A2332" text-anchor="start" font-weight="normal"></text>
+<text x="910" y="260" font-family="Noto Sans CJK SC" font-size="13" fill="#1A2332" text-anchor="start" font-weight="normal">提交条件示例（须全部满足）：</text>
+<text x="910" y="280" font-family="Noto Sans CJK SC" font-size="13" fill="#1A2332" text-anchor="start" font-weight="normal">· 当前用户属于调度组</text>
+<text x="910" y="300" font-family="Noto Sans CJK SC" font-size="13" fill="#1A2332" text-anchor="start" font-weight="normal">· 设备状态允许派工（未处于锁定）</text>
+<text x="910" y="320" font-family="Noto Sans CJK SC" font-size="13" fill="#1A2332" text-anchor="start" font-weight="normal">· 技师具备该设备类型资质且在岗</text>
+<text x="910" y="340" font-family="Noto Sans CJK SC" font-size="13" fill="#1A2332" text-anchor="start" font-weight="normal">· 高风险工单须主管确认</text>
+<text x="910" y="360" font-family="Noto Sans CJK SC" font-size="13" fill="#1A2332" text-anchor="start" font-weight="normal"></text>
+<text x="910" y="380" font-family="Noto Sans CJK SC" font-size="13" fill="#1A2332" text-anchor="start" font-weight="normal">Function 可计算停机影响或候选技师，</text>
+<text x="910" y="400" font-family="Noto Sans CJK SC" font-size="13" fill="#1A2332" text-anchor="start" font-weight="normal">但编辑必须配成 Action 才会落盘。</text>
+<rect x="890" y="440" width="550" height="300" rx="12" ry="12" fill="#F7F8FA" stroke="#374151" stroke-width="1.5"/>
+<text x="910" y="470" font-family="Noto Sans CJK SC" font-size="16" fill="#374151" text-anchor="start" font-weight="bold">权限要分层，不能只靠提交条件</text>
+<rect x="910" y="500" width="510" height="70" rx="8" ry="8" fill="#E7EEF8" stroke="#2F4F7A" stroke-width="1.2"/>
+<text x="926" y="528" font-family="Noto Sans CJK SC" font-size="14" fill="#2F4F7A" text-anchor="start" font-weight="bold">1. 本体资源权限</text>
+<text x="926" y="550" font-family="Noto Sans CJK SC" font-size="12" fill="#1A2332" text-anchor="start" font-weight="normal">谁可以查看或编辑对象类型、链接类型、Action 类型（模式）</text>
+<rect x="910" y="585" width="510" height="70" rx="8" ry="8" fill="#E8F2EA" stroke="#2F6B4F" stroke-width="1.2"/>
+<text x="926" y="613" font-family="Noto Sans CJK SC" font-size="14" fill="#2F6B4F" text-anchor="start" font-weight="bold">2. 对象与链接数据权限</text>
+<text x="926" y="635" font-family="Noto Sans CJK SC" font-size="12" fill="#1A2332" text-anchor="start" font-weight="normal">谁可以看见或修改哪一条实例、哪一个属性</text>
+<rect x="910" y="670" width="510" height="70" rx="8" ry="8" fill="#F8EDE6" stroke="#8A4B2E" stroke-width="1.2"/>
+<text x="926" y="698" font-family="Noto Sans CJK SC" font-size="14" fill="#8A4B2E" text-anchor="start" font-weight="bold">3. Action 提交条件</text>
+<text x="926" y="720" font-family="Noto Sans CJK SC" font-size="12" fill="#1A2332" text-anchor="start" font-weight="normal">在已能调用该 Action 的前提下，这次参数和上下文是否允许提交</text>
+<line x1="40" y1="864" x2="1440" y2="864" stroke="#C5CED6" stroke-width="1"/>
+<text x="40" y="884" font-family="Noto Sans CJK SC" font-size="11" fill="#6B7280" text-anchor="start" font-weight="normal">说明性示意图。对象、动作与权限分层依据官方文档，实例数据为虚构。核查日期 2026-11-20（Asia/Shanghai）。</text>
+</svg>

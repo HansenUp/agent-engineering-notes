@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1480" height="800" viewBox="0 0 1480 800">
+  <rect width="1480" height="800" fill="#FAFBFC"/>
+  <defs>
+  <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+    <path d="M 0 0 L 10 5 L 0 10 z" fill="#3D4F63"/>
+  </marker>
+  <marker id="arrow-dashed" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+    <path d="M 0 0 L 10 5 L 0 10 z" fill="#7A8792"/>
+  </marker>
+  <marker id="arrow-red" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+    <path d="M 0 0 L 10 5 L 0 10 z" fill="#8B3A3A"/>
+  </marker>
+  <marker id="arrow-green" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+    <path d="M 0 0 L 10 5 L 0 10 z" fill="#2F6B4F"/>
+  </marker>
+</defs>
+  <text x="40" y="36" font-family="Noto Sans CJK SC" font-size="20" fill="#1A2332" text-anchor="start" font-weight="bold">图 1  产品角色与「数据 → 语义 → 行动」逻辑</text>
+<text x="40" y="58" font-family="Noto Sans CJK SC" font-size="12" fill="#5A6570" text-anchor="start" font-weight="normal">Foundry 与 Gotham 面向不同任务形态，可与 AIP 协同。Apollo 置于右侧控制面，而不是套在业务链最底层。</text>
+<text x="40" y="90" font-family="Noto Sans CJK SC" font-size="12" fill="#5A6570" text-anchor="start" font-weight="normal">主链路（从左到右）：数据进入平台，映射为对象，经分析或智能体形成建议，再由受权 Action 执行。</text>
+<text x="40" y="108" font-family="Noto Sans CJK SC" font-size="12" fill="#5A6570" text-anchor="start" font-weight="normal">产品关系：Foundry / Gotham 提供运营与任务系统，AIP 在其上激活模型，Apollo 负责把整套软件送到各种环境。</text>
+<rect x="40" y="200" width="190" height="280" rx="12" ry="12" fill="#EEF2F6" stroke="#4A5A6A" stroke-width="1.6"/>
+<text x="135.0" y="236" font-family="Noto Sans CJK SC" font-size="15" fill="#4A5A6A" text-anchor="middle" font-weight="bold">源系统</text>
+<text x="135.0" y="278" font-family="Noto Sans CJK SC" font-size="13" fill="#1A2332" text-anchor="middle" font-weight="normal">ERP / MES / CMMS</text>
+<text x="135.0" y="308" font-family="Noto Sans CJK SC" font-size="13" fill="#1A2332" text-anchor="middle" font-weight="normal">文档与传感器</text>
+<text x="135.0" y="338" font-family="Noto Sans CJK SC" font-size="13" fill="#1A2332" text-anchor="middle" font-weight="normal">既有业务数据库</text>
+<rect x="80.0" y="432" width="110" height="28" rx="14" ry="14" fill="#FFFFFF" stroke="#4A5A6A" stroke-width="1"/>
+<text x="135.0" y="451" font-family="Noto Sans CJK SC" font-size="11" fill="#4A5A6A" text-anchor="middle" font-weight="normal">数据所在之处</text>
+<rect x="270" y="200" width="190" height="280" rx="12" ry="12" fill="#E8F2EA" stroke="#2F6B4F" stroke-width="1.6"/>
+<text x="365.0" y="236" font-family="Noto Sans CJK SC" font-size="15" fill="#2F6B4F" text-anchor="middle" font-weight="bold">接入与治理</text>
+<text x="365.0" y="278" font-family="Noto Sans CJK SC" font-size="13" fill="#1A2332" text-anchor="middle" font-weight="normal">连接、转换、质量</text>
+<text x="365.0" y="308" font-family="Noto Sans CJK SC" font-size="13" fill="#1A2332" text-anchor="middle" font-weight="normal">血缘与管道</text>
+<text x="365.0" y="338" font-family="Noto Sans CJK SC" font-size="13" fill="#1A2332" text-anchor="middle" font-weight="normal">Foundry 数据能力</text>
+<rect x="305.0" y="432" width="120" height="28" rx="14" ry="14" fill="#FFFFFF" stroke="#2F6B4F" stroke-width="1"/>
+<text x="365.0" y="451" font-family="Noto Sans CJK SC" font-size="11" fill="#2F6B4F" text-anchor="middle" font-weight="normal">可映射，未必复制</text>
+<rect x="500" y="170" width="250" height="340" rx="12" ry="12" fill="#E7EEF8" stroke="#2F4F7A" stroke-width="1.6"/>
+<text x="625.0" y="206" font-family="Noto Sans CJK SC" font-size="15" fill="#2F4F7A" text-anchor="middle" font-weight="bold">Ontology 业务对象层</text>
+<text x="625.0" y="248" font-family="Noto Sans CJK SC" font-size="13" fill="#1A2332" text-anchor="middle" font-weight="normal">对象 / 属性 / 链接</text>
+<text x="625.0" y="278" font-family="Noto Sans CJK SC" font-size="13" fill="#1A2332" text-anchor="middle" font-weight="normal">Function 与规则</text>
+<text x="625.0" y="308" font-family="Noto Sans CJK SC" font-size="13" fill="#1A2332" text-anchor="middle" font-weight="normal">Action 类型定义</text>
+<rect x="552.0" y="462" width="146" height="28" rx="14" ry="14" fill="#FFFFFF" stroke="#2F4F7A" stroke-width="1"/>
+<text x="625.0" y="481" font-family="Noto Sans CJK SC" font-size="11" fill="#2F4F7A" text-anchor="middle" font-weight="normal">语义 + 可执行动作</text>
+<rect x="790" y="200" width="200" height="280" rx="12" ry="12" fill="#F3E9F0" stroke="#6B3D5E" stroke-width="1.6"/>
+<text x="890.0" y="236" font-family="Noto Sans CJK SC" font-size="15" fill="#6B3D5E" text-anchor="middle" font-weight="bold">分析与智能体</text>
+<text x="890.0" y="278" font-family="Noto Sans CJK SC" font-size="13" fill="#1A2332" text-anchor="middle" font-weight="normal">分析、规则、优化</text>
+<text x="890.0" y="308" font-family="Noto Sans CJK SC" font-size="13" fill="#1A2332" text-anchor="middle" font-weight="normal">大模型与 AIP</text>
+<text x="890.0" y="338" font-family="Noto Sans CJK SC" font-size="13" fill="#1A2332" text-anchor="middle" font-weight="normal">起草建议，不直接写库</text>
+<rect x="835.0" y="432" width="110" height="28" rx="14" ry="14" fill="#FFFFFF" stroke="#6B3D5E" stroke-width="1"/>
+<text x="890.0" y="451" font-family="Noto Sans CJK SC" font-size="11" fill="#6B3D5E" text-anchor="middle" font-weight="normal">模型提议</text>
+<rect x="1030" y="200" width="175" height="280" rx="12" ry="12" fill="#F8EDE6" stroke="#8A4B2E" stroke-width="1.6"/>
+<text x="1117.5" y="236" font-family="Noto Sans CJK SC" font-size="15" fill="#8A4B2E" text-anchor="middle" font-weight="bold">受权 Action</text>
+<text x="1117.5" y="278" font-family="Noto Sans CJK SC" font-size="13" fill="#1A2332" text-anchor="middle" font-weight="normal">权限与提交条件</text>
+<text x="1117.5" y="308" font-family="Noto Sans CJK SC" font-size="13" fill="#1A2332" text-anchor="middle" font-weight="normal">可选人工复核</text>
+<text x="1117.5" y="338" font-family="Noto Sans CJK SC" font-size="13" fill="#1A2332" text-anchor="middle" font-weight="normal">改对象并记审计</text>
+<rect x="1062.5" y="432" width="110" height="28" rx="14" ry="14" fill="#FFFFFF" stroke="#8A4B2E" stroke-width="1"/>
+<text x="1117.5" y="451" font-family="Noto Sans CJK SC" font-size="11" fill="#8A4B2E" text-anchor="middle" font-weight="normal">可信代码执行</text>
+<line x1="230" y1="340" x2="268" y2="340" stroke="#3D4F63" stroke-width="1.8" marker-end="url(#arrow)"/>
+<line x1="460" y1="340" x2="498" y2="340" stroke="#3D4F63" stroke-width="1.8" marker-end="url(#arrow)"/>
+<line x1="750" y1="340" x2="788" y2="340" stroke="#3D4F63" stroke-width="1.8" marker-end="url(#arrow)"/>
+<line x1="990" y1="340" x2="1028" y2="340" stroke="#3D4F63" stroke-width="1.8" marker-end="url(#arrow)"/>
+<path d="M 1117 480 C 1117 575, 625 595, 625 510" fill="none" stroke="#2F4F7A" stroke-width="1.6" marker-end="url(#arrow)"/>
+<text x="850" y="590" font-family="Noto Sans CJK SC" font-size="12" fill="#2F4F7A" text-anchor="middle" font-weight="normal">成功后更新对象，结果反馈回 Ontology</text>
+<path d="M 1030 430 C 820 670, 200 670, 135 480" fill="none" stroke="#7A8792" stroke-width="1.5" stroke-dasharray="6 4" marker-end="url(#arrow-dashed)"/>
+<text x="560" y="690" font-family="Noto Sans CJK SC" font-size="12" fill="#5A6570" text-anchor="middle" font-weight="normal">虚线：仅当已配置连接器、webhook 或 Function 时才写回源系统，不会自动同步全部源系统</text>
+<rect x="1230" y="150" width="210" height="500" rx="12" ry="12" fill="#F3F4F6" stroke="#4B5563" stroke-width="1.6" stroke-dasharray="7 4"/>
+<text x="1335.0" y="186" font-family="Noto Sans CJK SC" font-size="18" fill="#111827" text-anchor="middle" font-weight="bold">Apollo</text>
+<text x="1335.0" y="212" font-family="Noto Sans CJK SC" font-size="13" fill="#374151" text-anchor="middle" font-weight="normal">交付与运维控制面</text>
+<rect x="1246" y="234" width="178" height="1" rx="0" ry="0" fill="#D1D5DB" stroke="#D1D5DB" stroke-width="0"/>
+<text x="1335.0" y="270" font-family="Noto Sans CJK SC" font-size="13" fill="#1A2332" text-anchor="middle" font-weight="normal">云、本地</text>
+<text x="1335.0" y="296" font-family="Noto Sans CJK SC" font-size="13" fill="#1A2332" text-anchor="middle" font-weight="normal">隔离或严苛环境</text>
+<text x="1335.0" y="322" font-family="Noto Sans CJK SC" font-size="13" fill="#1A2332" text-anchor="middle" font-weight="normal">功能与安全更新</text>
+<text x="1335.0" y="348" font-family="Noto Sans CJK SC" font-size="13" fill="#1A2332" text-anchor="middle" font-weight="normal">配置发放</text>
+<text x="1335.0" y="374" font-family="Noto Sans CJK SC" font-size="13" fill="#1A2332" text-anchor="middle" font-weight="normal"></text>
+<text x="1335.0" y="400" font-family="Noto Sans CJK SC" font-size="13" fill="#1A2332" text-anchor="middle" font-weight="normal">客户也可用它</text>
+<text x="1335.0" y="426" font-family="Noto Sans CJK SC" font-size="13" fill="#1A2332" text-anchor="middle" font-weight="normal">部署自有软件</text>
+<text x="1335.0" y="452" font-family="Noto Sans CJK SC" font-size="13" fill="#1A2332" text-anchor="middle" font-weight="normal"></text>
+<text x="1335.0" y="478" font-family="Noto Sans CJK SC" font-size="13" fill="#1A2332" text-anchor="middle" font-weight="normal">不是业务推理步骤</text>
+<text x="1335.0" y="504" font-family="Noto Sans CJK SC" font-size="13" fill="#1A2332" text-anchor="middle" font-weight="normal">不插入数据到行动</text>
+<text x="1335.0" y="530" font-family="Noto Sans CJK SC" font-size="13" fill="#1A2332" text-anchor="middle" font-weight="normal">链路的中间一层</text>
+<line x1="1230" y1="220" x2="1205" y2="220" stroke="#9AA3AB" stroke-width="1.1" marker-end="url(#arrow-dashed)" stroke-dasharray="4 3"/>
+<line x1="1230" y1="340" x2="1205" y2="340" stroke="#9AA3AB" stroke-width="1.1" marker-end="url(#arrow-dashed)" stroke-dasharray="4 3"/>
+<line x1="1230" y1="470" x2="1205" y2="470" stroke="#9AA3AB" stroke-width="1.1" marker-end="url(#arrow-dashed)" stroke-dasharray="4 3"/>
+<text x="1335.0" y="138" font-family="Noto Sans CJK SC" font-size="11" fill="#6B7280" text-anchor="middle" font-weight="normal">跨环境部署与升级</text>
+<line x1="40" y1="764" x2="1440" y2="764" stroke="#C5CED6" stroke-width="1"/>
+<text x="40" y="784" font-family="Noto Sans CJK SC" font-size="11" fill="#6B7280" text-anchor="start" font-weight="normal">说明性示意图，依据公开文档整理，不是 Palantir 内部架构图。核查日期 2026-11-20（Asia/Shanghai）。</text>
+</svg>
